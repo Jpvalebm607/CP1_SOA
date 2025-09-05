@@ -1,0 +1,64 @@
+# ========================
+# Java
+# ========================
+*.class
+*.war
+*.ear
+
+# Logs
+*.log
+
+# BlueJ
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# ========================
+# Maven
+# ========================
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+# Eclipse
+.project
+.classpath
+.settings/
+.springBeans
+.factorypath
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# NetBeans
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# VS Code
+.vscode/
+
+# ========================
+# OS generated files
+# ========================
+.DS_Store
+Thumbs.db
+
+# ========================
+# Docker
+# ========================
+/docker-compose.override.yml
+/.docker/
+
+# ========================
+# Arquivos sensíveis
+# ========================
+application-*.yml
+application-*.properties

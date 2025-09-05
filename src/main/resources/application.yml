@@ -1,0 +1,31 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/autoescola_db
+    username: autoescola
+    password: autoescola
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        format_sql: true
+        jdbc:
+          time_zone: UTC
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+
+server:
+  port: 8080
+
+# paginação padrão
+spring.data.web.pageable:
+  default-page-size: 10
+  max-page-size: 100
+
+# Swagger (springdoc) → vamos adicionar no pom.xml
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
